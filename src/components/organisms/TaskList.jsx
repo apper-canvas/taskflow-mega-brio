@@ -4,7 +4,7 @@ import TaskCard from "@/components/organisms/TaskCard";
 import Loading from "@/components/ui/Loading";
 import Error from "@/components/ui/Error";
 import Empty from "@/components/ui/Empty";
-import ApperIcon from "@/components/ui/ApperIcon";
+import ApperIcon from "@/components/ApperIcon";
 import taskService from "@/services/api/taskService";
 
 const TaskList = ({ 
