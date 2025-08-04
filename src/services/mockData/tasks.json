@@ -1,0 +1,112 @@
+[
+  {
+    "Id": 1,
+    "title": "Complete project proposal",
+    "description": "Finish the Q4 project proposal document and send it to stakeholders for review",
+    "categoryId": 1,
+    "priority": "high",
+    "dueDate": "2024-02-15T09:00:00.000Z",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-02-01T10:30:00.000Z"
+  },
+  {
+    "Id": 2,
+    "title": "Schedule team meeting",
+    "description": "Organize a team sync for next week to discuss project progress",
+    "categoryId": 1,
+    "priority": "medium",
+    "dueDate": "2024-02-12T14:00:00.000Z",
+    "completed": true,
+    "completedAt": "2024-02-10T11:45:00.000Z",
+    "createdAt": "2024-02-01T09:15:00.000Z"
+  },
+  {
+    "Id": 3,
+    "title": "Buy groceries",
+    "description": "Get milk, eggs, bread, and vegetables for the week",
+    "categoryId": 2,
+    "priority": "medium",
+    "dueDate": "2024-02-14T18:00:00.000Z",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-02-02T08:20:00.000Z"
+  },
+  {
+    "Id": 4,
+    "title": "Update website portfolio",
+    "description": "Add recent projects and update the design section",
+    "categoryId": 3,
+    "priority": "low",
+    "dueDate": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-02-01T16:45:00.000Z"
+  },
+  {
+    "Id": 5,
+    "title": "Book dentist appointment",
+    "description": "Schedule routine dental cleaning for next month",
+    "categoryId": 4,
+    "priority": "medium",
+    "dueDate": "2024-02-20T10:00:00.000Z",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-02-03T12:00:00.000Z"
+  },
+  {
+    "Id": 6,
+    "title": "Read chapter 5",
+    "description": "Continue reading 'Atomic Habits' - focus on habit stacking",
+    "categoryId": 3,
+    "priority": "low",
+    "dueDate": "2024-02-13T20:00:00.000Z",
+    "completed": true,
+    "completedAt": "2024-02-11T19:30:00.000Z",
+    "createdAt": "2024-02-01T21:10:00.000Z"
+  },
+  {
+    "Id": 7,
+    "title": "Fix kitchen faucet",
+    "description": "Replace the dripping kitchen faucet - parts already purchased",
+    "categoryId": 2,
+    "priority": "high",
+    "dueDate": "2024-02-16T15:00:00.000Z",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-02-04T07:30:00.000Z"
+  },
+  {
+    "Id": 8,
+    "title": "Prepare presentation slides",
+    "description": "Create slides for Monday's client presentation on the marketing campaign",
+    "categoryId": 1,
+    "priority": "high",
+    "dueDate": "2024-02-11T17:00:00.000Z",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-02-05T13:20:00.000Z"
+  },
+  {
+    "Id": 9,
+    "title": "Go for a run",
+    "description": "30-minute jog around the neighborhood",
+    "categoryId": 4,
+    "priority": "medium",
+    "dueDate": null,
+    "completed": true,
+    "completedAt": "2024-02-09T07:45:00.000Z",
+    "createdAt": "2024-02-02T19:00:00.000Z"
+  },
+  {
+    "Id": 10,
+    "title": "Clean desk workspace",
+    "description": "Organize papers, clean monitors, and arrange supplies",
+    "categoryId": 2,
+    "priority": "low",
+    "dueDate": "2024-02-17T12:00:00.000Z",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-02-06T14:15:00.000Z"
+  }
+]

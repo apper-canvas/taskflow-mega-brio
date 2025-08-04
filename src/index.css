@@ -1,0 +1,112 @@
+@import "react-toastify/dist/ReactToastify.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base font families */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom toast styling */
+.Toastify__toast {
+  border-radius: 8px;
+  font-size: 14px;
+  min-height: 48px;
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #10B981, #059669);
+  color: white;
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #EF4444, #DC2626);
+  color: white;
+}
+
+.Toastify__toast--info {
+  background: linear-gradient(135deg, #3B82F6, #2563EB);
+  color: white;
+}
+
+.Toastify__toast-container {
+  z-index: 9999;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #5B21B6, #EC4899);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #4C1D95, #DB2777);
+}
+
+/* Task completion animation */
+.task-complete-animation {
+  animation: bounce-in 0.6s ease-out;
+}
+
+.task-slide-out {
+  animation: slide-out 0.8s ease-in forwards;
+}
+
+/* Priority pulse animation */
+.priority-high {
+  animation: pulse-scale 2s infinite;
+}
+
+/* Custom checkbox styles */
+.custom-checkbox {
+  @apply w-5 h-5 rounded border-2 border-gray-300 bg-white cursor-pointer transition-all duration-200;
+}
+
+.custom-checkbox:checked {
+  @apply bg-gradient-to-r from-primary to-secondary border-primary;
+}
+
+.custom-checkbox:hover {
+  @apply border-primary shadow-sm;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #5B21B6, #EC4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass morphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Button hover effects */
+.btn-primary {
+  @apply bg-gradient-to-r from-primary to-purple-700 hover:from-purple-800 hover:to-primary transform hover:scale-[1.02] active:scale-[0.98] text-white font-medium px-4 py-2 rounded-lg transition-all duration-200;
+}
+
+.btn-secondary {
+  @apply bg-gradient-to-r from-secondary to-pink-600 hover:from-pink-700 hover:to-secondary transform hover:scale-[1.02] active:scale-[0.98] text-white font-medium px-4 py-2 rounded-lg transition-all duration-200;
+}
+
+.btn-accent {
+  @apply bg-gradient-to-r from-accent to-orange-500 hover:from-orange-600 hover:to-accent transform hover:scale-[1.02] active:scale-[0.98] text-white font-medium px-4 py-2 rounded-lg transition-all duration-200;
+}
