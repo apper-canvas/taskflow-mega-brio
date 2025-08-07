@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { useSelector } from "react-redux";
+import { AuthContext } from "@/App";
 import ApperIcon from "@/components/ApperIcon";
-import Button from "@/components/atoms/Button";
 import SearchBar from "@/components/molecules/SearchBar";
-
+import Button from "@/components/atoms/Button";
 const Header = ({ onAddTask, searchValue, onSearchChange, onToggleFilters }) => {
+  const { logout } = useContext(AuthContext);
+  const { user } = useSelector((state) => state.user);
+  
+  const handleLogout = () => {
+    logout();
+  };
+  
   return (
     <header className="glass-effect border-b border-gray-200 px-6 py-4 sticky top-0 z-50">
       <div className="flex items-center justify-between">
@@ -37,12 +45,23 @@ const Header = ({ onAddTask, searchValue, onSearchChange, onToggleFilters }) => 
           >
             <ApperIcon name="Filter" size={18} />
           </Button>
-
-          <Button onClick={onAddTask} className="flex items-center space-x-2">
+<Button onClick={onAddTask} className="flex items-center space-x-2">
             <ApperIcon name="Plus" size={18} />
             <span className="hidden sm:inline">Add Task</span>
           </Button>
-        </div>
+
+          {user && (
+            <div className="flex items-center space-x-3">
+              <span className="text-sm text-gray-600 hidden sm:inline">
+                {user.firstName} {user.lastName}
+              </span>
+              <Button onClick={handleLogout} variant="outline" className="flex items-center space-x-2">
+                <ApperIcon name="LogOut" size={16} />
+                <span className="hidden sm:inline">Logout</span>
+              </Button>
+            </div>
+          )}
+</div>
       </div>
 
       {/* Mobile search */}
